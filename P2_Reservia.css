@@ -1,0 +1,500 @@
+/*Body*/
+
+body
+{
+    width: 100%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/*header*/
+
+header
+{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100px;
+    height: 45px;
+    margin-left: 15px;
+}
+
+nav
+{
+    width: 100%;
+    margin-right: 15px;
+}
+
+ nav ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav li
+{
+    margin-left: 100px;
+    padding-top: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.menu
+{
+    border-top: 2px solid white;
+}
+.menu:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #DEEBFF;
+    cursor: pointer;
+}
+
+.inscription
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+/*section*/
+
+p
+{
+    margin: initial;
+}
+
+/* section annonce*/
+
+#annonce
+{
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.gras
+{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.gras.text
+{
+    padding-bottom: 5px;
+}
+
+.filtres
+{
+    font-size: 1em;
+}
+
+.annonce
+{
+    font-size: 1.23em;
+}
+
+.icone
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search
+{
+    margin-left: 15px;
+}
+
+.search_icone
+{
+    color: black;
+}
+
+.fas.fa-map-marker-alt
+{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 10.5px 10.5px;
+    border-radius: 10px 0 0 10px;
+}
+
+input
+{
+    border: 1px solid #F2F2F2;
+}
+
+#recherche
+{
+    padding: 10px;
+    margin: -5px;
+    font-weight: bold;
+}
+
+#recherche:focus
+{
+    outline: 0;
+}
+
+#button
+{
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button:focus
+{
+    outline: 0;
+}
+
+.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog, .fas.fa-info
+{
+    color: #0065FC;
+    font-size: 15px;
+}
+
+.filter
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.economie, .familial, .pet, .romantique
+{
+    display: flex;
+    font-size: 0.7em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    border-radius: 34px 34px 34px 34px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.gras.titre
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fas.fa-info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#text_info
+{
+    margin-left: 10px;
+}
+
+#hebergement
+{
+
+    width: 65%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 15px;
+}
+
+#populaire
+{
+    width: 35%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 3%;
+    margin-right: 15px;
+}
+
+#hebergementpop
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.titre_section
+{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.plus_populaire
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fas.fa-chart-line
+{
+    display: flex;
+    justify-content: baseline;
+    font-size: 1.45em;
+}
+
+.proposition
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cannebiere, #port, #mouette, #mer, #panier, #amina
+{
+    height: 230px;
+    width: 330px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#matin, #eau, #bleu
+{
+    height: 213px;
+    width: 200px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.hotel
+{
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+}
+
+.populaire
+{
+    height: 213px;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px darkgray;
+    cursor: pointer;
+}
+
+.text_gras
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.prix
+{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.text_gras2
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.prix2
+{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+.legende
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 10px 5px 10px;
+}
+
+.legende2
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 5px 10px;
+}
+
+.star
+{
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+/*Activités*/
+
+#Activites
+{
+    padding: 80px 0 80px 0;
+}
+
+.titre_activites
+{
+    margin-left: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: -60px;
+}
+
+.article_activites
+{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 15px 0 15px;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 60px 0 0;
+}
+
+.activite
+{
+    cursor: pointer;
+    border: 0 solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    width: 100%;
+    height: 100%;
+}
+
+#fort
+{
+    height: calc(60% - 60px);
+    margin: 0 60px 60px 0;
+}
+
+#frioul
+{
+    height: 40%;
+    margin: 0 60px 0 0;
+}
+
+#dame
+{
+    height: calc(48% - 60px);
+    margin: 0 60px 60px 0;
+}
+
+#parc
+{
+    height: 52%;
+    margin: 0 60px 0 0;
+}
+
+.image_activites
+{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: calc(100% - 53px);
+    object-fit: cover;
+}
+
+.text_activites
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Footer*/
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.titre_footer
+{
+    font-weight: bold;
+}
+
+.menu_footer
+{
+    margin: 30px;
+    margin-right: 23%;
+}
+
+.menu_footer ul
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    list-style-type: none;
+}
+
+ul
+{
+    padding-inline-start: 0;
+}
+
+.menu_footer ul li
+{
+    margin-bottom: 10px;
+}
+
