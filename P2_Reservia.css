@@ -522,4 +522,16 @@ ul
         width: auto;
         background-color: white;
     }
+
+    #Activites
+    {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .article_activites
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
