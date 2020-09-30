@@ -505,6 +505,36 @@ ul
         width: auto;
     }
 
+    .filter
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filter
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .filtres.gras
+    {
+        margin: 0 0 10px 0;
+    }
+
+    .pet
+    {
+        margin: 0;
+    }
+
+    .economie, .familial, .romantique
+    {
+        margin: 0 0 10px 0;
+    }
+
     #hebergementpop
     {
         display: flex;
@@ -515,6 +545,7 @@ ul
     {
         width: auto;
         border-radius: 0;
+        margin: 0;
     }
 
     #hebergement
