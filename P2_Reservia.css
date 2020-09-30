@@ -519,6 +519,58 @@ ul
         display: none;
     }
 
+    #topheader
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo
+    {
+        margin-top: 10px;
+    }
+
+    #inscription
+    {
+        margin: 0;
+    }
+
+    li.inscription.menu
+    {
+        padding: 0;
+        border-bottom: 2px solid white;
+        margin: 27px 15px 0 0;
+    }
+
+    .menu
+    {
+        display: flex;
+        margin-left: 0;
+        width: 100%;
+        justify-content: inherit;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 20px 0 10px 0;
+    }
+
+    .menu:hover
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: 2px solid white;
+    }
+
+    .gras.text
+    {
+        width: 75%;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .filter
     {
         display: flex;
@@ -532,7 +584,7 @@ ul
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
-        width: 100%;
+        width: 75%;
     }
 
     .filtres.gras
