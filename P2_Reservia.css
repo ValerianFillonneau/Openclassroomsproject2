@@ -498,3 +498,28 @@ ul
     margin-bottom: 10px;
 }
 
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    #hebergementpop
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #populaire
+    {
+        width: auto;
+        border-radius: 0;
+    }
+
+    #hebergement
+    {
+        width: auto;
+        background-color: white;
+    }
+}
