@@ -10,12 +10,13 @@ body
 
 /*header*/
 
-header
+.PC
 {
     display: flex;
     align-items: flex-end;
     padding-bottom: 50px;
 }
+
 
 #logo
 {
@@ -498,11 +499,24 @@ ul
     margin-bottom: 10px;
 }
 
+@media all and (min-width: 1025px)
+{
+    header.mobile
+    {
+        display: none;
+    }
+}
+
 @media all and (max-width: 1024px)
 {
     body
     {
         width: auto;
+    }
+
+    header.PC
+    {
+        display: none;
     }
 
     .filter
@@ -543,15 +557,43 @@ ul
 
     #populaire
     {
+        display: flex;
+        flex-direction: column;
         width: auto;
         border-radius: 0;
         margin: 0;
+        padding: 40px 0 40px 0;
+    }
+
+    .populaire
+    {
+        width: 90%;
+        height: 100px;
+    }
+
+    #matin, #eau, #bleu
+    {
+        width: 40%;
+        height: 100%;
     }
 
     #hebergement
     {
         width: auto;
         background-color: white;
+        padding: 40px 20px 40px 0;
+    }
+
+    .hotel
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+    #cannebiere, #port, #mouette, #mer, #panier, #amina
+    {
+        width: 100%;
+        height: 60%;
     }
 
     #Activites
@@ -565,4 +607,29 @@ ul
         display: flex;
         flex-direction: column;
     }
+
+    
+
+    .column
+    {
+        margin: 10px 0 10px 0;
+    }
+
+    .activite, #frioul, #fort, #dame, #parc
+    {
+        height: 200px;
+    }
+
+    footer
+    {
+        width: 100%;
+    }
+
+    #menu
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
