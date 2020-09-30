@@ -169,6 +169,13 @@ input
     font-size: 15px;
 }
 
+#filter
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .filter
 {
     display: flex;
@@ -316,6 +323,25 @@ input
     cursor: pointer;
 }
 
+.plus_populaire
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#titrepop
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.fas.fa-chart-line
+{
+    height: 100%;
+}
+
 .text_gras
 {
     font-size: 1.2em;
@@ -433,13 +459,13 @@ input
 #dame
 {
     height: calc(48% - 60px);
-    margin: 0 60px 60px 0;
+    margin: 0 0 60px 0;
 }
 
 #parc
 {
     height: 52%;
-    margin: 0 60px 0 0;
+    margin: 0;
 }
 
 .image_activites
@@ -475,10 +501,18 @@ footer
     font-weight: bold;
 }
 
+#menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px 40px 40px;
+}
+
 .menu_footer
 {
-    margin: 30px;
-    margin-right: 23%;
+    width: 300px;
 }
 
 .menu_footer ul
