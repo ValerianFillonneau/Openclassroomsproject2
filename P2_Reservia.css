@@ -529,9 +529,10 @@ ul
     #filter
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .filtres.gras
@@ -546,7 +547,7 @@ ul
 
     .economie, .familial, .romantique
     {
-        margin: 0 0 10px 0;
+        margin: 0 10px 10px 0;
     }
 
     #hebergementpop
@@ -630,8 +631,6 @@ ul
         display: flex;
         flex-direction: column;
     }
-
-    
 
     .column
     {
