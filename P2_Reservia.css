@@ -562,7 +562,9 @@ ul
 
     #logo2
     {
-        margin-top: 10px;
+        width: 100px;
+        height: 45px;
+        margin: 10px 0 0 15px;
     }
 
     #inscription
