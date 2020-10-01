@@ -124,9 +124,8 @@ p
 
 .fas.fa-map-marker-alt
 {
-    border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
-    padding: 10.5px 10.5px;
+    padding: 11px 11px 12px 11px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -272,7 +271,6 @@ input
 .fas.fa-chart-line
 {
     display: flex;
-    justify-content: baseline;
     font-size: 1.45em;
 }
 
@@ -290,6 +288,7 @@ input
     width: 330px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+    padding: 1.5%;
 }
 
 #matin, #eau, #bleu
@@ -298,11 +297,12 @@ input
     width: 200px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
+    padding: 1.5%;
 }
 
 .hotel
 {
-    border: 5px solid white;
+    height: 100%;
     border-radius: 15px;
     background-color: white;
     margin-bottom: 40px;
@@ -312,10 +312,9 @@ input
 
 .populaire
 {
-    height: 213px;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    border: 5px solid white;
     border-radius: 15px;
     background-color: white;
     margin-bottom: 25px;
@@ -344,6 +343,7 @@ input
 
 .text_gras
 {
+    cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 5px;
@@ -525,7 +525,7 @@ footer
 
 ul
 {
-    padding-inline-start: 0;
+    padding-left: 0;
 }
 
 .menu_footer ul li
@@ -560,7 +560,7 @@ ul
         justify-content: space-between;
     }
 
-    #logo
+    #logo2
     {
         margin-top: 10px;
     }
