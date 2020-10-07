@@ -285,10 +285,9 @@ input
 #cannebiere, #port, #mouette, #mer, #panier, #amina
 {
     height: 230px;
-    width: 330px;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    padding: 1.5%;
 }
 
 #matin, #eau, #bleu
@@ -297,17 +296,18 @@ input
     width: 200px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
-    padding: 1%;
 }
 
 .hotel
 {
     height: 100%;
+    width: 325px;
     border-radius: 15px;
     background-color: white;
     margin-bottom: 40px;
     box-shadow: 0 0 10px grey;
     cursor: pointer;
+    padding: 10px;
 }
 
 .populaire
@@ -320,6 +320,7 @@ input
     margin-bottom: 25px;
     box-shadow: 0 0 10px darkgray;
     cursor: pointer;
+    padding: 10px;
 }
 
 .plus_populaire
@@ -696,7 +697,7 @@ ul
     #matin, #eau, #bleu
     {
         width: 40%;
-        height: 95%;
+        height: 100%;
     }
 
     #hebergement
