@@ -28,6 +28,18 @@ body
     margin-left: 15px;
 }
 
+.menu
+{
+    border-top: 2px solid white;
+}
+
+.menu:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #DEEBFF;
+    cursor: pointer;
+}
+
 nav
 {
     width: 100%;
@@ -49,30 +61,18 @@ nav li
     font-weight: bold;
 }
 
-.menu
-{
-    border-top: 2px solid white;
-}
-.menu:hover
-{
-    border-top: 2px solid #0065FC;
-    color: #DEEBFF;
-    cursor: pointer;
-}
-
 .inscription
 {
     color: #0065FC;
     font-weight: bold;
 }
-/*section*/
+
+/* section annonce*/
 
 p
 {
     margin: initial;
 }
-
-/* section annonce*/
 
 #annonce
 {
@@ -91,26 +91,7 @@ p
     padding-bottom: 5px;
 }
 
-.filtres
-{
-    font-size: 1em;
-}
-
-.annonce
-{
-    font-size: 1.23em;
-}
-
-.icone
-{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Search*/
 
 .search
 {
@@ -160,6 +141,29 @@ input
 #button:focus
 {
     outline: 0;
+}
+
+/*Filtres*/
+
+.filtres
+{
+    font-size: 1em;
+}
+
+.annonce
+{
+    font-size: 1.23em;
+}
+
+.icone
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog, .fas.fa-info
@@ -226,6 +230,15 @@ input
     margin-left: 10px;
 }
 
+/*Hebergement*/
+
+#hebergementpop
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
 #hebergement
 {
 
@@ -247,13 +260,6 @@ input
     margin-right: 15px;
 }
 
-#hebergementpop
-{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
-
 .titre_section
 {
     font-size: 2em;
@@ -268,34 +274,12 @@ input
     justify-content: space-between;
 }
 
-.fas.fa-chart-line
-{
-    display: flex;
-    font-size: 1.45em;
-}
-
 .proposition
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#cannebiere, #port, #mouette, #mer, #panier, #amina
-{
-    height: 230px;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-#matin, #eau, #bleu
-{
-    height: 213px;
-    width: 200px;
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
 }
 
 .hotel
@@ -308,6 +292,20 @@ input
     box-shadow: 0 0 10px grey;
     cursor: pointer;
     padding: 10px;
+}
+
+#cannebiere, #port, #mouette, #mer, #panier, #amina
+{
+    height: 230px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.plus_populaire
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .populaire
@@ -323,12 +321,6 @@ input
     padding: 10px;
 }
 
-.plus_populaire
-{
-    display: flex;
-    flex-direction: column;
-}
-
 #titrepop
 {
     display: flex;
@@ -339,7 +331,32 @@ input
 
 .fas.fa-chart-line
 {
+    display: flex;
+    font-size: 1.45em;
     height: 100%;
+}
+
+#matin, #eau, #bleu
+{
+    height: 213px;
+    width: 200px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.legende
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 10px 5px 10px;
+}
+
+.legende2
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 5px 10px;
 }
 
 .text_gras
@@ -379,21 +396,6 @@ input
 .grey
 {
     color: #F2F2F2;
-}
-
-.legende
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px 10px 5px 10px;
-}
-
-.legende2
-{
-    display: flex;
-    flex-direction: column;
-    margin: 5px 10px 5px 10px;
 }
 
 .star
@@ -534,6 +536,8 @@ ul
     margin-bottom: 10px;
 }
 
+/*Desactivation header mobile*/
+
 @media all and (min-width: 1025px)
 {
     header.mobile
@@ -542,12 +546,19 @@ ul
     }
 }
 
+/*Mode Responsive*/
+
 @media all and (max-width: 1024px)
 {
+
+    /*body*/
+
     body
     {
         width: auto;
     }
+
+    /*Header*/
 
     header.PC
     {
@@ -580,6 +591,11 @@ ul
         margin: 27px 15px 0 0;
     }
 
+    .gras.text
+    {
+        width: 75%;
+    }
+
     .menu
     {
         display: flex;
@@ -597,16 +613,13 @@ ul
         border-top: 2px solid white;
     }
 
-    .gras.text
-    {
-        width: 75%;
-    }
-
     nav ul
     {
         display: flex;
         justify-content: space-around;
     }
+
+    /*Filter*/
 
     .filter
     {
@@ -639,20 +652,12 @@ ul
         margin: 0 10px 10px 0;
     }
 
+    /*Hebergement*/
+
     #hebergementpop
     {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    .titre_section
-    {
-        font-size: 1.6em;
-    }
-
-    .titre_activites
-    {
-        font-size: 1.6em;
     }
 
     #populaire
@@ -665,17 +670,39 @@ ul
         padding: 40px 0 40px 0;
     }
 
+    #hebergement
+    {
+        width: auto;
+        background-color: white;
+        padding: 40px 20px 40px 0;
+    }
+
     .plus_populaire
     {
         display: flex;
         flex-direction: column;
-
     }
 
     .populaire
     {
         width: 90%;
         height: 150px;
+    }
+
+    .hotel
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+    .titre_section
+    {
+        font-size: 1.6em;
+    }
+
+    .titre_activites
+    {
+        font-size: 1.6em;
     }
 
     #titrepop
@@ -700,24 +727,13 @@ ul
         height: 100%;
     }
 
-    #hebergement
-    {
-        width: auto;
-        background-color: white;
-        padding: 40px 20px 40px 0;
-    }
-
-    .hotel
-    {
-        width: 100%;
-        height: 200px;
-    }
-
     #cannebiere, #port, #mouette, #mer, #panier, #amina
     {
         width: 97%;
         height: 53%;
     }
+
+    /*Activités*/
 
     #Activites
     {
@@ -753,6 +769,8 @@ ul
     {
         margin: 0 0 30px 0;
     }
+
+    /*Footer*/
 
     footer
     {
